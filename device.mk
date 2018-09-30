@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	init.qcom.rc
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # NFC
 $(call inherit-product, device/xiaomi/dipper/device-nfc.mk)
 
