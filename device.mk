@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
 
+PRODUCT_PACKAGES += \
+	android.hidl.base@1.0 \
+	android.hidl.manager@1.0
+
 # Recovery init scripts
 PRODUCT_COPY_FILES += \
 	device/xiaomi/dipper/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
@@ -150,8 +154,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp,adb
 
+# SELinux
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.build.selinux=0
+
 # SPN
 PRODUCT_COPY_FILES += device/xiaomi/dipper/spn-conf.xml:system/etc/spn-conf.xml
 
 # Kernel
 $(call inherit-product, device/xiaomi/dipper-kernel/device-kernel.mk)
+
