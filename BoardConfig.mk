@@ -102,7 +102,7 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_EXFAT_DRIVER := exfat
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := device/xiaomi/dipper/config.fs
+TARGET_ANDROID_FILESYSTEM_CONFIG_H := device/xiaomi/dipper/android_filesystem_config.h
 
 # System image size
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
