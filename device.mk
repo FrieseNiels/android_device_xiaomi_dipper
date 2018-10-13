@@ -127,7 +127,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Fingerprint navigation
 PRODUCT_COPY_FILES += \
         device/xiaomi/dipper/uinput-goodix.idc:system/usr/idc/uinput-goodix.idc \
-        device/xiaomi/dipper/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
+        device/xiaomi/dipper/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl \
+        device/xiaomi/dipper/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
+        device/xiaomi/dipper/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
 # Audio configs
 PRODUCT_COPY_FILES += \
